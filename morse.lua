@@ -39,8 +39,8 @@ local filename = arg[1]
 
 local txt_file = io.open(filename, "r")
 if not txt_file then
-    print("Error: could not open file '" .. filename .. "'")
-    os.exit(1)
+	print("Error: could not open file '" .. filename .. "'")
+	os.exit(1)
 end
 
 local txt = txt_file:read("*all")
